@@ -10,7 +10,7 @@
   <li>Vue.js : 以Vue.js框架編程，快速反應使用者行為</li>
 </ul>
 
-<h3>排版分為五部分:</h3>
+<h3>排版分為六部分:</h3>
 <ul>
   <li>herader - 大標題</li>
   <li>area-dropdowns - 下拉選單(主要資料控制區域)</li>
