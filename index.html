@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>宜蘭文化景觀導覽</title>
+    
+    <!-- favicon.ico -->
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/vue.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- google-api -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6XhLgCR1Ds9JebapEt9VbVsB_pdJggT4&callback=initMap">
+    </script>
+    <script type="text/javascript" src="js/main.js"></script>
+
+</head>
+
+<body>
+    <div id="app" class="container-fluid">
+        <div class="row">
+            <div class="col-2">
+                <div id="egret"></div>
+            </div>
+            <div id="wrapper" class="col-md-8 col-9 ">
+
+                <div id="header" class="margin-div">
+                    <a href="test3.html"><h1 class="background-self">宜蘭文化景觀導覽</h1></a>
+                </div>
+                <div id="area-dropdowns" class="d-flex justify-content-center margin-div">
+                        <select id ="dropdown-menu" class="background-self"  @change="changeContentBySelector(thisValue)" v-model="thisValue">
+                            <option class="background-self" value="">請選擇區域</option>
+                            <option class="background-self" v-for="area in areas" :value="area">{{ area }}</option>
+                        </select >
+                </div>
+                <div id="google-map" class="margin-div"></div>
+                
+                <h2 id="contentTitle" class="background-self">{{ title }}文化景觀</h2>
+                <div id="culture-data"  class="margin-div">
+                    <div id="culture-row" class="row">
+                        <div :id='data.idNum' class="col-xl-6 margin-div"  v-for="data in filer" v-if='data.AREA'>
+                            <div class="card">
+                                <img class="card-img-top" :src="'img/' + data.IMG" >
+                                <div class="card-body">
+                                    <ol class="card-text">
+                                        <li>名稱 : {{ data.TITLE }}</li>
+                                        <li>地址 : {{ data.ADDRESS }}</li>
+                                        <li>描述 : {{ data.DESC }}</li>
+                                    </ol>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <footer class="background-self text-center"><h2>資料來源：宜蘭縣政府</h2></footer>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

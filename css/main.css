@@ -1,0 +1,107 @@
+<!--
+/* Common CSS START */
+@import url(https://fonts.googleapis.com/earlyaccess/cwtexyen.css);
+
+body {
+    font-family: 'cwTeXYen', sans-serif;
+}
+
+.container-fluid {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+ol, ul {
+    list-style-type: circle;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+img {
+    width: 100%;
+}
+
+#app {
+    background-image: url(../img/field-bg.png);
+    background-position: top;
+    background-repeat: repeat-y;
+}
+
+.background-self {
+    background: rgba(0, 0, 0, 0.5);
+    color: aliceblue;
+    line-height: 1.8;
+}
+
+.margin-div {
+    margin: 2em 0;
+}
+/* Common CSS END */
+-->
+
+<!--
+/* Fixed object CSS START */
+#egret {
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 15%;
+    height: 200px;
+    margin-left: 1%;
+    background-image: url(../img/egret.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: top;
+    animation: fly 1s infinite alternate;
+    animation: flyaway 20s infinite;
+}
+
+@keyframes fly {
+    from {
+        background-image: url(../img/egret.png);
+    }
+    to {
+        background-image: url(../img/egret-2.png);
+    }
+}
+
+@keyframes flyaway {
+    0% {top:10%;opacity: 1;background-image: url(../img/egret.png);}
+    10% {background-image: url(../img/egret-2.png);}
+    20% {background-image: url(../img/egret.png);}
+    30% {background-image: url(../img/egret-2.png);}
+    40% {background-image: url(../img/egret.png);}
+    50% {background-image: url(../img/egret-2.png);}
+    60% {background-image: url(../img/egret.png);}
+    70% {opacity: 1;background-image: url(../img/egret-2.png);}
+    80% {background-image: url(../img/egret.png);}
+    90% {top:80%;opacity: 0;background-image: url(../img/egret-2.png);}
+    91% {top:0;opacity: 0;background-image: url(../img/egret-2.png);}
+    100% {top:10;opacity: 1;background-image: url(../img/egret.png);}
+}
+/* Fixed object CSS END */
+-->
+
+<!--
+/* area-dropdowns CSS START */
+#dropdown-menu {
+    font-size: 1.8em;
+    padding: .2em;
+}
+/* area-dropdowns CSS END */
+-->
+
+<!--
+/* google-map CSS START */
+#google-map {
+    height: 400px;
+    width: 100%;
+}
+/* google-map CSS END */
+--> 
