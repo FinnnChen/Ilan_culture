@@ -1,37 +1,17 @@
-## Welcome to GitHub Pages
+## Ilan_culture
 
-You can use the [editor on GitHub](https://github.com/FinnnChen/Ilan_culture/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+宜蘭文化資產導覽串接Google map api 及 json資料呈現
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+主題:
+A. Bootstrap4 : 使用網格及 Flex 架構 RWD
+B. JSON 資料 :  AJAX 介接 JSON 資料
+C. Google maps API : 串接、標記及 AJAX 邏輯資料匯入
+D. Vue.js : 以Vue.js框架編程，快速反應使用者行為
 
-### Markdown
-
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
-
-```markdown
-Syntax highlighted code block
-
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/FinnnChen/Ilan_culture/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+排版分為五部分:
+A. herader - 大標題
+B. area-dropdowns - 下拉選單(主要資料控制區域)
+C. google-map - google map api 串接
+D. culture-data - JSON資料區域
+E. footer
+F. fixed物件 - 白鷺鷥動畫
